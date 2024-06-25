@@ -11,6 +11,16 @@
 		E87B139A2C2AFFE3000D9BBD /* PolyLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87B138F2C2AFFE2000D9BBD /* PolyLabel.framework */; };
 		E87B139F2C2AFFE3000D9BBD /* PolyLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B139E2C2AFFE3000D9BBD /* PolyLabelTests.swift */; };
 		E87B13A02C2AFFE3000D9BBD /* PolyLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E87B13922C2AFFE2000D9BBD /* PolyLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E87B13AB2C2B00AA000D9BBD /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B13AA2C2B00AA000D9BBD /* Heap.swift */; };
+		E87B13AC2C2B00AA000D9BBD /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B13AA2C2B00AA000D9BBD /* Heap.swift */; };
+		E87B13AE2C2B0162000D9BBD /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B13AD2C2B0162000D9BBD /* PriorityQueue.swift */; };
+		E87B13AF2C2B0162000D9BBD /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B13AD2C2B0162000D9BBD /* PriorityQueue.swift */; };
+		E87B13B12C2B019A000D9BBD /* PolyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B13B02C2B019A000D9BBD /* PolyLabel.swift */; };
+		E87B13B22C2B019A000D9BBD /* PolyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B13B02C2B019A000D9BBD /* PolyLabel.swift */; };
+		E87B13B42C2B01CF000D9BBD /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B13B32C2B01CF000D9BBD /* Cell.swift */; };
+		E87B13B52C2B01CF000D9BBD /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B13B32C2B01CF000D9BBD /* Cell.swift */; };
+		E87B13BA2C2B04B2000D9BBD /* water1.json in Resources */ = {isa = PBXBuildFile; fileRef = E87B13B72C2B04B2000D9BBD /* water1.json */; };
+		E87B13BC2C2B04B2000D9BBD /* water2.json in Resources */ = {isa = PBXBuildFile; fileRef = E87B13B82C2B04B2000D9BBD /* water2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,12 @@
 		E87B13932C2AFFE2000D9BBD /* PolyLabel.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PolyLabel.docc; sourceTree = "<group>"; };
 		E87B13992C2AFFE3000D9BBD /* PolyLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolyLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87B139E2C2AFFE3000D9BBD /* PolyLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyLabelTests.swift; sourceTree = "<group>"; };
+		E87B13AA2C2B00AA000D9BBD /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		E87B13AD2C2B0162000D9BBD /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		E87B13B02C2B019A000D9BBD /* PolyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyLabel.swift; sourceTree = "<group>"; };
+		E87B13B32C2B01CF000D9BBD /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		E87B13B72C2B04B2000D9BBD /* water1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water1.json; sourceTree = "<group>"; };
+		E87B13B82C2B04B2000D9BBD /* water2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +87,11 @@
 		E87B13912C2AFFE2000D9BBD /* PolyLabel */ = {
 			isa = PBXGroup;
 			children = (
+				E87B13A92C2B009B000D9BBD /* utils */,
 				E87B13922C2AFFE2000D9BBD /* PolyLabel.h */,
 				E87B13932C2AFFE2000D9BBD /* PolyLabel.docc */,
+				E87B13B02C2B019A000D9BBD /* PolyLabel.swift */,
+				E87B13B32C2B01CF000D9BBD /* Cell.swift */,
 			);
 			path = PolyLabel;
 			sourceTree = "<group>";
@@ -80,9 +99,28 @@
 		E87B139D2C2AFFE3000D9BBD /* PolyLabelTests */ = {
 			isa = PBXGroup;
 			children = (
+				E87B13B62C2B0437000D9BBD /* Resources */,
 				E87B139E2C2AFFE3000D9BBD /* PolyLabelTests.swift */,
 			);
 			path = PolyLabelTests;
+			sourceTree = "<group>";
+		};
+		E87B13A92C2B009B000D9BBD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E87B13AA2C2B00AA000D9BBD /* Heap.swift */,
+				E87B13AD2C2B0162000D9BBD /* PriorityQueue.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		E87B13B62C2B0437000D9BBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E87B13B72C2B04B2000D9BBD /* water1.json */,
+				E87B13B82C2B04B2000D9BBD /* water2.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +222,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87B13BC2C2B04B2000D9BBD /* water2.json in Resources */,
+				E87B13BA2C2B04B2000D9BBD /* water1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87B13942C2AFFE2000D9BBD /* PolyLabel.docc in Sources */,
+				E87B13AB2C2B00AA000D9BBD /* Heap.swift in Sources */,
+				E87B13B42C2B01CF000D9BBD /* Cell.swift in Sources */,
+				E87B13B12C2B019A000D9BBD /* PolyLabel.swift in Sources */,
+				E87B13AE2C2B0162000D9BBD /* PriorityQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87B139F2C2AFFE3000D9BBD /* PolyLabelTests.swift in Sources */,
+				E87B13AC2C2B00AA000D9BBD /* Heap.swift in Sources */,
+				E87B13B52C2B01CF000D9BBD /* Cell.swift in Sources */,
+				E87B13B22C2B019A000D9BBD /* PolyLabel.swift in Sources */,
+				E87B13AF2C2B0162000D9BBD /* PriorityQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +401,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -362,7 +410,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -394,7 +442,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -403,7 +451,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -423,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QX49HG597;
@@ -444,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QX49HG597;
