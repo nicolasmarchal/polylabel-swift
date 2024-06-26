@@ -1,12 +1,12 @@
 //
-//  PolyLabelTests.swift
-//  PolyLabelTests
+//  PolyLabelSwiftTests.swift
+//  PolyLabelSwiftTests
 //
 //  Created by Nicolas Marchal on 25/06/2024.
 //
 
 import XCTest
-@testable import PolyLabel
+@testable import PolyLabelSwift
 
 class PolyLabelTests: XCTestCase {
     static var water1: [[[Double]]] = []

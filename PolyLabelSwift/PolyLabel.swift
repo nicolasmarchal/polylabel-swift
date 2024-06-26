@@ -13,13 +13,13 @@ public class PolyLabel {
     let y: Double
     let distance: Double
 
-    init(x: Double, y: Double, distance: Double) {
+    public init(x: Double, y: Double, distance: Double) {
         self.x = x
         self.y = y
         self.distance = distance
     }
 
-    static func polyLabel(_ polygon: [[[Double]]], precision: Double = 1.0, debug: Bool = false) -> PolyLabel {
+    public static func polyLabel(_ polygon: [[[Double]]], precision: Double = 1.0, debug: Bool = false) -> PolyLabel {
         // find the bounding box of the outer ring
         var minX = polygon[0][0][0]
         var maxX = minX
