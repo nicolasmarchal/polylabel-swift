@@ -9,11 +9,11 @@ import Foundation
 
 public class PolyLabel {
 
-    let x: Double
-    let y: Double
-    let distance: Double
+    public let x: Double
+    public let y: Double
+    public let distance: Double
 
-    public init(x: Double, y: Double, distance: Double) {
+    init(x: Double, y: Double, distance: Double) {
         self.x = x
         self.y = y
         self.distance = distance
@@ -119,9 +119,5 @@ public class PolyLabel {
         }
 
         return Cell(x: x / area, y: y / area, half: 0, polygon: polygon)
-    }
-
-    func getCoordinates() -> [Double] {
-        return [x, y]
     }
 }
