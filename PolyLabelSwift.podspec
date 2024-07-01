@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PolyLabelSwift"
-  spec.version      = "0.0.2"
+  spec.version      = "1.0.0"
   spec.summary      = "A fast algorithm for finding polygon pole of inaccessibility"
 
   # This description is used to generate tags and improve search results.
@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Nicolas Marchal" => "marchalnicolas@outlook.com" }
+  spec.author             = { "Nicolas Marchal" => "22968076+nicolasmarchal@users.noreply.github.com" }
   # Or just: spec.author    = "Nicolas Marchal"
   # spec.authors            = { "Nicolas Marchal" => "marchalnicolas@outlook.com" }
   # spec.social_media_url   = "https://twitter.com/Nicolas Marchal"
